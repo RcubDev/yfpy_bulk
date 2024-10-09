@@ -29,3 +29,6 @@ test_output/
 *private*.json
 !private.template.json
 *token*.json
+
+# Quick Start Bulk Output
+quickstart/output_folder
