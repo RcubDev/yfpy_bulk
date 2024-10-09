@@ -7,6 +7,8 @@ __email__ = "uberfastman@uberfastman.dev"
 
 import os
 import sys
+import re
+import json
 from logging import DEBUG
 from pathlib import Path
 
@@ -45,14 +47,14 @@ def get_season():
     # season = 2014
     # season = 2015
     # season = 2016
-    # season = 2017
+    season = 2017
     # season = 2018
     # season = 2019
     # season = 2020
     # season = 2021
     # season = 2022
     # season = 2023
-    season = 2024
+    # season = 2024
     return season
 
 
@@ -113,14 +115,14 @@ def get_game_id():
     # game_id = 331  # NFL - 2014
     # game_id = 348  # NFL - 2015 (divisions)
     # game_id = 359  # NFL - 2016
-    # game_id = 371  # NFL - 2017
+    game_id = 371  # NFL - 2017
     # game_id = 380  # NFL - 2018
     # game_id = 390  # NFL - 2019
     # game_id = 399  # NFL - 2020
     # game_id = 406  # NFL - 2021
     # game_id = 414  # NFL - 2022 (divisions)
     # game_id = 423  # NFL - 2023
-    game_id = 449  # NFL - 2024
+    # game_id = 449  # NFL - 2024
 
     # HOCKEY
     # game_id = 303  # NHL - 2012
@@ -182,7 +184,7 @@ def get_league_id():
     # league_id = "413954"  # NFL - 2021
     # league_id = "791337"  # NFL - 2022 (divisions)
     # league_id = "321958"  # NFL - 2023
-    league_id = "365083"  # NFL - 2024
+    league_id = "919100"  # NFL - 2024
 
     # HOCKEY
     # league_id = "69624"  # NHL - 2012
@@ -260,6 +262,45 @@ def get_league_player_limit():
 
     return league_player_limit
 
+def read_from_output(file_name):
+    folder_path = 'output_folder'
+    file_path = os.path.join(folder_path, file_name)
+
+    # Read the text file
+    with open(file_path, 'r') as text_file:
+        content = text_file.read()
+    return content
+
+
+def write_to_output(file_name, content):
+    folder_path = 'output_folder'
+    file_path = os.path.join(folder_path, file_name)
+
+    # Create the folder if it doesn't exist
+    os.makedirs(folder_path, exist_ok=True)    
+
+    # Write the transactions to a JSON file
+    with open(file_path, 'w') as text_file:
+        text_file.write(content)
+
+    print(f"League transactions have been written to {file_path}")
+
+def write_json_to_output(file_name, content):
+    # Define the folder and file path
+    folder_path = 'output_folder'
+    file_path = os.path.join(folder_path, file_name)
+
+    # Create the folder if it doesn't exist
+    os.makedirs(folder_path, exist_ok=True)    
+
+    # Write the transactions to a JSON file
+    with open(file_path, 'w') as json_file:
+        json.dump(content, json_file, indent=4)
+
+    print(f"File has been written to {file_path}")
+
+    
+
 
 test_league_player_limit = get_league_player_limit()
 
@@ -272,8 +313,8 @@ query = YahooFantasySportsQuery(
     test_league_id,
     test_game_code,
     game_id=test_game_id,
-    yahoo_consumer_key=os.environ.get("YAHOO_CONSUMER_KEY"),
-    yahoo_consumer_secret=os.environ.get("YAHOO_CONSUMER_SECRET"),
+    yahoo_consumer_key=os.environ.get("yahoo_consumer_key"),
+    yahoo_consumer_secret=os.environ.get("yahoo_consumer_secret"),
     # yahoo_access_token_json=os.environ.get("YAHOO_ACCESS_TOKEN_JSON"),
     env_file_location=project_dir,
     save_token_data_to_env_file=True
@@ -312,10 +353,10 @@ test_player_key = f"{test_game_id}.p.{test_player_id}"
 # print(repr(query.get_league_standings()))
 # print(repr(query.get_league_teams()))
 # print(repr(query.get_league_players(player_count_limit=10, player_count_start=0)))
-# print(repr(query.get_league_draft_results()))
+print(repr(query.get_league_draft_results()))
 # print(repr(query.get_league_transactions()))
 # print(repr(query.get_league_scoreboard_by_week(test_chosen_week)))
-# print(repr(query.get_league_matchups_by_week(test_chosen_week)))
+print(repr(query.get_league_matchups_by_week(test_chosen_week)))
 # print(repr(query.get_team_info(test_team_id)))
 # print(repr(query.get_team_metadata(test_team_id)))
 # print(repr(query.get_team_stats(test_team_id)))
@@ -366,7 +407,47 @@ logger = get_logger("yfpy.models", DEBUG)
 # query.get_league_teams()
 # query.get_league_players(player_count_limit=10, player_count_start=0)
 # query.get_league_draft_results()
-# query.get_league_transactions()
+# print(repr(query.get_league_transactions()))
+def massage_data(string_to_massage, data):
+    # Use regular expressions to clean up the data
+    # Remove "{stringToMassage}({" and "})"
+    data = re.sub(rf'{re.escape(string_to_massage)}\(\{{', '{', data)
+    data = re.sub(r'\}\)', '}', data)
+
+    # Ensure the data is a valid JSON array    
+    data = f'{data}'
+    returnData = json.loads(data)
+    return returnData
+
+def read_write_season_data(data_type, text_file_name, read_from_yahoo, query_method, massage_string):
+    if read_from_yahoo:
+        data = query_method()
+        write_to_output(f"{text_file_name}.txt", str(data))
+    
+    data_txt = read_from_output(f"{text_file_name}.txt")
+    data_json = massage_data(massage_string, data_txt)
+    write_json_to_output(f"{text_file_name}.json", data_json)
+
+# # TODO: Support multi year setup
+# --------------- TRANSACTION DATA ---------------- #
+read_write_season_data(
+    data_type="transactions",
+    text_file_name="league_transactions",
+    read_from_yahoo=False,
+    query_method=query.get_league_transactions,
+    massage_string="Transaction"
+)
+
+# ---------------- DRAFT RESULTS ----------------- #
+read_write_season_data(
+    data_type="draft_results",
+    text_file_name="draft_results",
+    read_from_yahoo=False,
+    query_method=query.get_league_draft_results,
+    massage_string="DraftResult"
+)
+
+
 # query.get_league_scoreboard_by_week(test_chosen_week)
 # query.get_league_matchups_by_week(test_chosen_week)
 # query.get_team_info(test_team_id)

@@ -1,0 +1,801 @@
+[DraftResult({
+  "pick": 1,
+  "round": 1,
+  "team_key": "371.l.919100.t.8",
+  "player_key": "371.p.28474"
+}), DraftResult({
+  "pick": 2,
+  "round": 1,
+  "team_key": "371.l.919100.t.4",
+  "player_key": "371.p.26671"
+}), DraftResult({
+  "pick": 3,
+  "round": 1,
+  "team_key": "371.l.919100.t.10",
+  "player_key": "371.p.24171"
+}), DraftResult({
+  "pick": 4,
+  "round": 1,
+  "team_key": "371.l.919100.t.2",
+  "player_key": "371.p.9317"
+}), DraftResult({
+  "pick": 5,
+  "round": 1,
+  "team_key": "371.l.919100.t.3",
+  "player_key": "371.p.27540"
+}), DraftResult({
+  "pick": 6,
+  "round": 1,
+  "team_key": "371.l.919100.t.5",
+  "player_key": "371.p.27631"
+}), DraftResult({
+  "pick": 7,
+  "round": 1,
+  "team_key": "371.l.919100.t.6",
+  "player_key": "371.p.24793"
+}), DraftResult({
+  "pick": 8,
+  "round": 1,
+  "team_key": "371.l.919100.t.7",
+  "player_key": "371.p.27535"
+}), DraftResult({
+  "pick": 9,
+  "round": 1,
+  "team_key": "371.l.919100.t.9",
+  "player_key": "371.p.24791"
+}), DraftResult({
+  "pick": 10,
+  "round": 1,
+  "team_key": "371.l.919100.t.1",
+  "player_key": "371.p.28403"
+}), DraftResult({
+  "pick": 11,
+  "round": 2,
+  "team_key": "371.l.919100.t.1",
+  "player_key": "371.p.28537"
+}), DraftResult({
+  "pick": 12,
+  "round": 2,
+  "team_key": "371.l.919100.t.9",
+  "player_key": "371.p.29281"
+}), DraftResult({
+  "pick": 13,
+  "round": 2,
+  "team_key": "371.l.919100.t.7",
+  "player_key": "371.p.29384"
+}), DraftResult({
+  "pick": 14,
+  "round": 2,
+  "team_key": "371.l.919100.t.6",
+  "player_key": "371.p.8813"
+}), DraftResult({
+  "pick": 15,
+  "round": 2,
+  "team_key": "371.l.919100.t.5",
+  "player_key": "371.p.23999"
+}), DraftResult({
+  "pick": 16,
+  "round": 2,
+  "team_key": "371.l.919100.t.3",
+  "player_key": "371.p.24858"
+}), DraftResult({
+  "pick": 17,
+  "round": 2,
+  "team_key": "371.l.919100.t.2",
+  "player_key": "371.p.30117"
+}), DraftResult({
+  "pick": 18,
+  "round": 2,
+  "team_key": "371.l.919100.t.10",
+  "player_key": "371.p.28398"
+}), DraftResult({
+  "pick": 19,
+  "round": 2,
+  "team_key": "371.l.919100.t.4",
+  "player_key": "371.p.24017"
+}), DraftResult({
+  "pick": 20,
+  "round": 2,
+  "team_key": "371.l.919100.t.8",
+  "player_key": "371.p.29238"
+}), DraftResult({
+  "pick": 21,
+  "round": 3,
+  "team_key": "371.l.919100.t.8",
+  "player_key": "371.p.25105"
+}), DraftResult({
+  "pick": 22,
+  "round": 3,
+  "team_key": "371.l.919100.t.4",
+  "player_key": "371.p.28392"
+}), DraftResult({
+  "pick": 23,
+  "round": 3,
+  "team_key": "371.l.919100.t.10",
+  "player_key": "371.p.25802"
+}), DraftResult({
+  "pick": 24,
+  "round": 3,
+  "team_key": "371.l.919100.t.2",
+  "player_key": "371.p.25681"
+}), DraftResult({
+  "pick": 25,
+  "round": 3,
+  "team_key": "371.l.919100.t.3",
+  "player_key": "371.p.25807"
+}), DraftResult({
+  "pick": 26,
+  "round": 3,
+  "team_key": "371.l.919100.t.5",
+  "player_key": "371.p.5228"
+}), DraftResult({
+  "pick": 27,
+  "round": 3,
+  "team_key": "371.l.919100.t.6",
+  "player_key": "371.p.7200"
+}), DraftResult({
+  "pick": 28,
+  "round": 3,
+  "team_key": "371.l.919100.t.7",
+  "player_key": "371.p.28014"
+}), DraftResult({
+  "pick": 29,
+  "round": 3,
+  "team_key": "371.l.919100.t.9",
+  "player_key": "371.p.8266"
+}), DraftResult({
+  "pick": 30,
+  "round": 3,
+  "team_key": "371.l.919100.t.1",
+  "player_key": "371.p.27548"
+}), DraftResult({
+  "pick": 31,
+  "round": 4,
+  "team_key": "371.l.919100.t.1",
+  "player_key": "371.p.27585"
+}), DraftResult({
+  "pick": 32,
+  "round": 4,
+  "team_key": "371.l.919100.t.9",
+  "player_key": "371.p.5479"
+}), DraftResult({
+  "pick": 33,
+  "round": 4,
+  "team_key": "371.l.919100.t.7",
+  "player_key": "371.p.26650"
+}), DraftResult({
+  "pick": 34,
+  "round": 4,
+  "team_key": "371.l.919100.t.6",
+  "player_key": "371.p.30121"
+}), DraftResult({
+  "pick": 35,
+  "round": 4,
+  "team_key": "371.l.919100.t.5",
+  "player_key": "371.p.9496"
+}), DraftResult({
+  "pick": 36,
+  "round": 4,
+  "team_key": "371.l.919100.t.3",
+  "player_key": "371.p.26686"
+}), DraftResult({
+  "pick": 37,
+  "round": 4,
+  "team_key": "371.l.919100.t.2",
+  "player_key": "371.p.25755"
+}), DraftResult({
+  "pick": 38,
+  "round": 4,
+  "team_key": "371.l.919100.t.10",
+  "player_key": "371.p.26699"
+}), DraftResult({
+  "pick": 39,
+  "round": 4,
+  "team_key": "371.l.919100.t.4",
+  "player_key": "371.p.23997"
+}), DraftResult({
+  "pick": 40,
+  "round": 4,
+  "team_key": "371.l.919100.t.8",
+  "player_key": "371.p.30161"
+}), DraftResult({
+  "pick": 41,
+  "round": 5,
+  "team_key": "371.l.919100.t.8",
+  "player_key": "371.p.29399"
+}), DraftResult({
+  "pick": 42,
+  "round": 5,
+  "team_key": "371.l.919100.t.4",
+  "player_key": "371.p.28482"
+}), DraftResult({
+  "pick": 43,
+  "round": 5,
+  "team_key": "371.l.919100.t.10",
+  "player_key": "371.p.26878"
+}), DraftResult({
+  "pick": 44,
+  "round": 5,
+  "team_key": "371.l.919100.t.2",
+  "player_key": "371.p.8285"
+}), DraftResult({
+  "pick": 45,
+  "round": 5,
+  "team_key": "371.l.919100.t.3",
+  "player_key": "371.p.27532"
+}), DraftResult({
+  "pick": 46,
+  "round": 5,
+  "team_key": "371.l.919100.t.5",
+  "player_key": "371.p.24070"
+}), DraftResult({
+  "pick": 47,
+  "round": 5,
+  "team_key": "371.l.919100.t.6",
+  "player_key": "371.p.26787"
+}), DraftResult({
+  "pick": 48,
+  "round": 5,
+  "team_key": "371.l.919100.t.7",
+  "player_key": "371.p.27589"
+}), DraftResult({
+  "pick": 49,
+  "round": 5,
+  "team_key": "371.l.919100.t.9",
+  "player_key": "371.p.26817"
+}), DraftResult({
+  "pick": 50,
+  "round": 5,
+  "team_key": "371.l.919100.t.1",
+  "player_key": "371.p.9274"
+}), DraftResult({
+  "pick": 51,
+  "round": 6,
+  "team_key": "371.l.919100.t.1",
+  "player_key": "371.p.25785"
+}), DraftResult({
+  "pick": 52,
+  "round": 6,
+  "team_key": "371.l.919100.t.9",
+  "player_key": "371.p.26708"
+}), DraftResult({
+  "pick": 53,
+  "round": 6,
+  "team_key": "371.l.919100.t.7",
+  "player_key": "371.p.30154"
+}), DraftResult({
+  "pick": 54,
+  "round": 6,
+  "team_key": "371.l.919100.t.6",
+  "player_key": "371.p.8838"
+}), DraftResult({
+  "pick": 55,
+  "round": 6,
+  "team_key": "371.l.919100.t.5",
+  "player_key": "371.p.27581"
+}), DraftResult({
+  "pick": 56,
+  "round": 6,
+  "team_key": "371.l.919100.t.3",
+  "player_key": "371.p.27591"
+}), DraftResult({
+  "pick": 57,
+  "round": 6,
+  "team_key": "371.l.919100.t.2",
+  "player_key": "371.p.27646"
+}), DraftResult({
+  "pick": 58,
+  "round": 6,
+  "team_key": "371.l.919100.t.10",
+  "player_key": "371.p.24815"
+}), DraftResult({
+  "pick": 59,
+  "round": 6,
+  "team_key": "371.l.919100.t.4",
+  "player_key": "371.p.28493"
+}), DraftResult({
+  "pick": 60,
+  "round": 6,
+  "team_key": "371.l.919100.t.8",
+  "player_key": "371.p.28390"
+}), DraftResult({
+  "pick": 61,
+  "round": 7,
+  "team_key": "371.l.919100.t.8",
+  "player_key": "371.p.6762"
+}), DraftResult({
+  "pick": 62,
+  "round": 7,
+  "team_key": "371.l.919100.t.4",
+  "player_key": "371.p.25711"
+}), DraftResult({
+  "pick": 63,
+  "round": 7,
+  "team_key": "371.l.919100.t.10",
+  "player_key": "371.p.8780"
+}), DraftResult({
+  "pick": 64,
+  "round": 7,
+  "team_key": "371.l.919100.t.2",
+  "player_key": "371.p.28389"
+}), DraftResult({
+  "pick": 65,
+  "round": 7,
+  "team_key": "371.l.919100.t.3",
+  "player_key": "371.p.26684"
+}), DraftResult({
+  "pick": 66,
+  "round": 7,
+  "team_key": "371.l.919100.t.5",
+  "player_key": "371.p.9560"
+}), DraftResult({
+  "pick": 67,
+  "round": 7,
+  "team_key": "371.l.919100.t.6",
+  "player_key": "371.p.24057"
+}), DraftResult({
+  "pick": 68,
+  "round": 7,
+  "team_key": "371.l.919100.t.7",
+  "player_key": "371.p.25812"
+}), DraftResult({
+  "pick": 69,
+  "round": 7,
+  "team_key": "371.l.919100.t.9",
+  "player_key": "371.p.27618"
+}), DraftResult({
+  "pick": 70,
+  "round": 7,
+  "team_key": "371.l.919100.t.1",
+  "player_key": "371.p.7924"
+}), DraftResult({
+  "pick": 71,
+  "round": 8,
+  "team_key": "371.l.919100.t.1",
+  "player_key": "371.p.27556"
+}), DraftResult({
+  "pick": 72,
+  "round": 8,
+  "team_key": "371.l.919100.t.9",
+  "player_key": "371.p.24318"
+}), DraftResult({
+  "pick": 73,
+  "round": 8,
+  "team_key": "371.l.919100.t.7",
+  "player_key": "371.p.26644"
+}), DraftResult({
+  "pick": 74,
+  "round": 8,
+  "team_key": "371.l.919100.t.6",
+  "player_key": "371.p.29383"
+}), DraftResult({
+  "pick": 75,
+  "round": 8,
+  "team_key": "371.l.919100.t.5",
+  "player_key": "371.p.8261"
+}), DraftResult({
+  "pick": 76,
+  "round": 8,
+  "team_key": "371.l.919100.t.3",
+  "player_key": "371.p.29369"
+}), DraftResult({
+  "pick": 77,
+  "round": 8,
+  "team_key": "371.l.919100.t.2",
+  "player_key": "371.p.7868"
+}), DraftResult({
+  "pick": 78,
+  "round": 8,
+  "team_key": "371.l.919100.t.10",
+  "player_key": "371.p.28461"
+}), DraftResult({
+  "pick": 79,
+  "round": 8,
+  "team_key": "371.l.919100.t.4",
+  "player_key": "371.p.28026"
+}), DraftResult({
+  "pick": 80,
+  "round": 8,
+  "team_key": "371.l.919100.t.8",
+  "player_key": "371.p.26658"
+}), DraftResult({
+  "pick": 81,
+  "round": 9,
+  "team_key": "371.l.919100.t.8",
+  "player_key": "371.p.29279"
+}), DraftResult({
+  "pick": 82,
+  "round": 9,
+  "team_key": "371.l.919100.t.4",
+  "player_key": "371.p.28691"
+}), DraftResult({
+  "pick": 83,
+  "round": 9,
+  "team_key": "371.l.919100.t.10",
+  "player_key": "371.p.24035"
+}), DraftResult({
+  "pick": 84,
+  "round": 9,
+  "team_key": "371.l.919100.t.2",
+  "player_key": "371.p.25741"
+}), DraftResult({
+  "pick": 85,
+  "round": 9,
+  "team_key": "371.l.919100.t.3",
+  "player_key": "371.p.24913"
+}), DraftResult({
+  "pick": 86,
+  "round": 9,
+  "team_key": "371.l.919100.t.5",
+  "player_key": "371.p.8826"
+}), DraftResult({
+  "pick": 87,
+  "round": 9,
+  "team_key": "371.l.919100.t.6",
+  "player_key": "371.p.6770"
+}), DraftResult({
+  "pick": 88,
+  "round": 9,
+  "team_key": "371.l.919100.t.7",
+  "player_key": "371.p.100007"
+}), DraftResult({
+  "pick": 89,
+  "round": 9,
+  "team_key": "371.l.919100.t.9",
+  "player_key": "371.p.28442"
+}), DraftResult({
+  "pick": 90,
+  "round": 9,
+  "team_key": "371.l.919100.t.1",
+  "player_key": "371.p.29694"
+}), DraftResult({
+  "pick": 91,
+  "round": 10,
+  "team_key": "371.l.919100.t.1",
+  "player_key": "371.p.9283"
+}), DraftResult({
+  "pick": 92,
+  "round": 10,
+  "team_key": "371.l.919100.t.9",
+  "player_key": "371.p.28697"
+}), DraftResult({
+  "pick": 93,
+  "round": 10,
+  "team_key": "371.l.919100.t.7",
+  "player_key": "371.p.7867"
+}), DraftResult({
+  "pick": 94,
+  "round": 10,
+  "team_key": "371.l.919100.t.6",
+  "player_key": "371.p.7241"
+}), DraftResult({
+  "pick": 95,
+  "round": 10,
+  "team_key": "371.l.919100.t.5",
+  "player_key": "371.p.6763"
+}), DraftResult({
+  "pick": 96,
+  "round": 10,
+  "team_key": "371.l.919100.t.3",
+  "player_key": "371.p.24788"
+}), DraftResult({
+  "pick": 97,
+  "round": 10,
+  "team_key": "371.l.919100.t.2",
+  "player_key": "371.p.24062"
+}), DraftResult({
+  "pick": 98,
+  "round": 10,
+  "team_key": "371.l.919100.t.10",
+  "player_key": "371.p.28402"
+}), DraftResult({
+  "pick": 99,
+  "round": 10,
+  "team_key": "371.l.919100.t.4",
+  "player_key": "371.p.29324"
+}), DraftResult({
+  "pick": 100,
+  "round": 10,
+  "team_key": "371.l.919100.t.8",
+  "player_key": "371.p.28534"
+}), DraftResult({
+  "pick": 101,
+  "round": 11,
+  "team_key": "371.l.919100.t.8",
+  "player_key": "371.p.29269"
+}), DraftResult({
+  "pick": 102,
+  "round": 11,
+  "team_key": "371.l.919100.t.4",
+  "player_key": "371.p.27564"
+}), DraftResult({
+  "pick": 103,
+  "round": 11,
+  "team_key": "371.l.919100.t.10",
+  "player_key": "371.p.24830"
+}), DraftResult({
+  "pick": 104,
+  "round": 11,
+  "team_key": "371.l.919100.t.2",
+  "player_key": "371.p.24822"
+}), DraftResult({
+  "pick": 105,
+  "round": 11,
+  "team_key": "371.l.919100.t.3",
+  "player_key": "371.p.25876"
+}), DraftResult({
+  "pick": 106,
+  "round": 11,
+  "team_key": "371.l.919100.t.5",
+  "player_key": "371.p.8982"
+}), DraftResult({
+  "pick": 107,
+  "round": 11,
+  "team_key": "371.l.919100.t.6",
+  "player_key": "371.p.25937"
+}), DraftResult({
+  "pick": 108,
+  "round": 11,
+  "team_key": "371.l.919100.t.7",
+  "player_key": "371.p.27299"
+}), DraftResult({
+  "pick": 109,
+  "round": 11,
+  "team_key": "371.l.919100.t.9",
+  "player_key": "371.p.100026"
+}), DraftResult({
+  "pick": 110,
+  "round": 11,
+  "team_key": "371.l.919100.t.1",
+  "player_key": "371.p.28714"
+}), DraftResult({
+  "pick": 111,
+  "round": 12,
+  "team_key": "371.l.919100.t.1",
+  "player_key": "371.p.100034"
+}), DraftResult({
+  "pick": 112,
+  "round": 12,
+  "team_key": "371.l.919100.t.9",
+  "player_key": "371.p.26534"
+}), DraftResult({
+  "pick": 113,
+  "round": 12,
+  "team_key": "371.l.919100.t.7",
+  "player_key": "371.p.27622"
+}), DraftResult({
+  "pick": 114,
+  "round": 12,
+  "team_key": "371.l.919100.t.6",
+  "player_key": "371.p.8447"
+}), DraftResult({
+  "pick": 115,
+  "round": 12,
+  "team_key": "371.l.919100.t.5",
+  "player_key": "371.p.24851"
+}), DraftResult({
+  "pick": 116,
+  "round": 12,
+  "team_key": "371.l.919100.t.3",
+  "player_key": "371.p.27570"
+}), DraftResult({
+  "pick": 117,
+  "round": 12,
+  "team_key": "371.l.919100.t.2",
+  "player_key": "371.p.24932"
+}), DraftResult({
+  "pick": 118,
+  "round": 12,
+  "team_key": "371.l.919100.t.10",
+  "player_key": "371.p.8790"
+}), DraftResult({
+  "pick": 119,
+  "round": 12,
+  "team_key": "371.l.919100.t.4",
+  "player_key": "371.p.8781"
+}), DraftResult({
+  "pick": 120,
+  "round": 12,
+  "team_key": "371.l.919100.t.8",
+  "player_key": "371.p.9348"
+}), DraftResult({
+  "pick": 121,
+  "round": 13,
+  "team_key": "371.l.919100.t.8",
+  "player_key": "371.p.100012"
+}), DraftResult({
+  "pick": 122,
+  "round": 13,
+  "team_key": "371.l.919100.t.4",
+  "player_key": "371.p.27583"
+}), DraftResult({
+  "pick": 123,
+  "round": 13,
+  "team_key": "371.l.919100.t.10",
+  "player_key": "371.p.29249"
+}), DraftResult({
+  "pick": 124,
+  "round": 13,
+  "team_key": "371.l.919100.t.2",
+  "player_key": "371.p.8263"
+}), DraftResult({
+  "pick": 125,
+  "round": 13,
+  "team_key": "371.l.919100.t.3",
+  "player_key": "371.p.25427"
+}), DraftResult({
+  "pick": 126,
+  "round": 13,
+  "team_key": "371.l.919100.t.5",
+  "player_key": "371.p.24936"
+}), DraftResult({
+  "pick": 127,
+  "round": 13,
+  "team_key": "371.l.919100.t.6",
+  "player_key": "371.p.100022"
+}), DraftResult({
+  "pick": 128,
+  "round": 13,
+  "team_key": "371.l.919100.t.7",
+  "player_key": "371.p.9294"
+}), DraftResult({
+  "pick": 129,
+  "round": 13,
+  "team_key": "371.l.919100.t.9",
+  "player_key": "371.p.24967"
+}), DraftResult({
+  "pick": 130,
+  "round": 13,
+  "team_key": "371.l.919100.t.1",
+  "player_key": "371.p.27619"
+}), DraftResult({
+  "pick": 131,
+  "round": 14,
+  "team_key": "371.l.919100.t.1",
+  "player_key": "371.p.26822"
+}), DraftResult({
+  "pick": 132,
+  "round": 14,
+  "team_key": "371.l.919100.t.9",
+  "player_key": "371.p.30227"
+}), DraftResult({
+  "pick": 133,
+  "round": 14,
+  "team_key": "371.l.919100.t.7",
+  "player_key": "371.p.9265"
+}), DraftResult({
+  "pick": 134,
+  "round": 14,
+  "team_key": "371.l.919100.t.6",
+  "player_key": "371.p.6760"
+}), DraftResult({
+  "pick": 135,
+  "round": 14,
+  "team_key": "371.l.919100.t.5",
+  "player_key": "371.p.100017"
+}), DraftResult({
+  "pick": 136,
+  "round": 14,
+  "team_key": "371.l.919100.t.3",
+  "player_key": "371.p.100016"
+}), DraftResult({
+  "pick": 137,
+  "round": 14,
+  "team_key": "371.l.919100.t.2",
+  "player_key": "371.p.28465"
+}), DraftResult({
+  "pick": 138,
+  "round": 14,
+  "team_key": "371.l.919100.t.10",
+  "player_key": "371.p.6243"
+}), DraftResult({
+  "pick": 139,
+  "round": 14,
+  "team_key": "371.l.919100.t.4",
+  "player_key": "371.p.28234"
+}), DraftResult({
+  "pick": 140,
+  "round": 14,
+  "team_key": "371.l.919100.t.8",
+  "player_key": "371.p.6337"
+}), DraftResult({
+  "pick": 141,
+  "round": 15,
+  "team_key": "371.l.919100.t.8",
+  "player_key": "371.p.27277"
+}), DraftResult({
+  "pick": 142,
+  "round": 15,
+  "team_key": "371.l.919100.t.4",
+  "player_key": "371.p.100002"
+}), DraftResult({
+  "pick": 143,
+  "round": 15,
+  "team_key": "371.l.919100.t.10",
+  "player_key": "371.p.100029"
+}), DraftResult({
+  "pick": 144,
+  "round": 15,
+  "team_key": "371.l.919100.t.2",
+  "player_key": "371.p.3727"
+}), DraftResult({
+  "pick": 145,
+  "round": 15,
+  "team_key": "371.l.919100.t.3",
+  "player_key": "371.p.27658"
+}), DraftResult({
+  "pick": 146,
+  "round": 15,
+  "team_key": "371.l.919100.t.5",
+  "player_key": "371.p.29754"
+}), DraftResult({
+  "pick": 147,
+  "round": 15,
+  "team_key": "371.l.919100.t.6",
+  "player_key": "371.p.24916"
+}), DraftResult({
+  "pick": 148,
+  "round": 15,
+  "team_key": "371.l.919100.t.7",
+  "player_key": "371.p.8821"
+}), DraftResult({
+  "pick": 149,
+  "round": 15,
+  "team_key": "371.l.919100.t.9",
+  "player_key": "371.p.30199"
+}), DraftResult({
+  "pick": 150,
+  "round": 15,
+  "team_key": "371.l.919100.t.1",
+  "player_key": "371.p.29315"
+}), DraftResult({
+  "pick": 151,
+  "round": 16,
+  "team_key": "371.l.919100.t.1",
+  "player_key": "371.p.27531"
+}), DraftResult({
+  "pick": 152,
+  "round": 16,
+  "team_key": "371.l.919100.t.9",
+  "player_key": "371.p.27538"
+}), DraftResult({
+  "pick": 153,
+  "round": 16,
+  "team_key": "371.l.919100.t.7",
+  "player_key": "371.p.100014"
+}), DraftResult({
+  "pick": 154,
+  "round": 16,
+  "team_key": "371.l.919100.t.6",
+  "player_key": "371.p.25744"
+}), DraftResult({
+  "pick": 155,
+  "round": 16,
+  "team_key": "371.l.919100.t.5",
+  "player_key": "371.p.6405"
+}), DraftResult({
+  "pick": 156,
+  "round": 16,
+  "team_key": "371.l.919100.t.3",
+  "player_key": "371.p.26804"
+}), DraftResult({
+  "pick": 157,
+  "round": 16,
+  "team_key": "371.l.919100.t.2",
+  "player_key": "371.p.100027"
+}), DraftResult({
+  "pick": 158,
+  "round": 16,
+  "team_key": "371.l.919100.t.10",
+  "player_key": "371.p.8850"
+}), DraftResult({
+  "pick": 159,
+  "round": 16,
+  "team_key": "371.l.919100.t.4",
+  "player_key": "371.p.9066"
+}), DraftResult({
+  "pick": 160,
+  "round": 16,
+  "team_key": "371.l.919100.t.8",
+  "player_key": "371.p.30118"
+})]
