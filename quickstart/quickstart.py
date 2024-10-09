@@ -18,6 +18,7 @@ sys.path.insert(0, str(project_dir))
 from yfpy import Data  # noqa: E402
 from yfpy.logger import get_logger  # noqa: E402
 from yfpy.query import YahooFantasySportsQuery  # noqa: E402
+import yfpy.utils as utils  # noqa: E402
 
 """
 Example public Yahoo league URL: "https://archive.fantasysports.yahoo.com/nfl/2014/729259"
@@ -428,25 +429,168 @@ def read_write_season_data(data_type, text_file_name, read_from_yahoo, query_met
     data_json = massage_data(massage_string, data_txt)
     write_json_to_output(f"{text_file_name}.json", data_json)
 
-# # TODO: Support multi year setup
+
 # --------------- TRANSACTION DATA ---------------- #
-read_write_season_data(
-    data_type="transactions",
-    text_file_name="league_transactions",
-    read_from_yahoo=False,
-    query_method=query.get_league_transactions,
-    massage_string="Transaction"
-)
+def write_yahoo_data_to_file(data, file_name):
+    folder_path = 'output_folder'
+    file_path = os.path.join(folder_path, file_name)
 
-# ---------------- DRAFT RESULTS ----------------- #
-read_write_season_data(
-    data_type="draft_results",
-    text_file_name="draft_results",
-    read_from_yahoo=False,
-    query_method=query.get_league_draft_results,
-    massage_string="DraftResult"
-)
+    # Create the folder if it doesn't exist
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
 
+    # Write the transactions to a JSON file
+    with open(file_path, 'w') as json_file:
+        utils.jsonify_data_to_file(data, json_file)
+
+# --------------- SETUP YEARS ---------------- #
+setup_path = os.path.join('quickstart', 'setup', 'yahoo_nfl_seasons.json')
+print(f"Attempting to read file at: {os.path.abspath(setup_path)}")
+
+print(setup_path)
+setup_data = []
+with open(setup_path, 'r') as setup_json:
+    setup_data = json.load(setup_json)
+    print(setup_data)
+
+# --------------- SETUP YAHOO GAME IDS ---------------- #
+nfl_game_ids = []
+
+skip = False
+if not skip:
+    for year in setup_data:
+        game_key = query.get_game_key_by_season(year)
+        obj = {}
+        obj['year'] = year
+        obj['yahoo_game_key'] = game_key
+        nfl_game_ids.append(obj)
+    write_json_to_output('yahoo_nfl_game_ids.json', nfl_game_ids)
+
+nfl_game_ids = json.loads(read_from_output('yahoo_nfl_game_ids.json'))
+
+
+# ---------- SETUP LEAGUE SEASONS MAP ------------ #
+seasons_map_path = os.path.join('quickstart', 'setup', 'league_seasons_map.json')
+print(f"Attempting to read file at: {os.path.abspath(seasons_map_path)}")
+with open(seasons_map_path, 'r') as setup_json:
+    seasons_map = json.load(setup_json)
+    print('using seasons seasons map: \n\n' + str(seasons_map))
+
+
+# ---------------- LEAGUE METADATA ----------------- #
+skip = True
+if not skip:
+    print('generating league metadata')
+    data = query.get_league_metadata()
+    write_yahoo_data_to_file(data, "league_metadata.json")
+
+data = json.loads(read_from_output("league_metadata.json"))
+
+endWeek = data['end_week']
+
+print("Season ends after " + str(endWeek) + " weeks")
+
+# ---------------- LEAGUE SCOREBOARD BY WEEKS ----------------- #
+skip = True
+if not skip:
+    for i in range(1, endWeek + 1):
+        print('generating scoreboard for week ' + str(i))
+        data = query.get_league_scoreboard_by_week(i)
+        path = os.path.join("league_scoreboard", f"league_scoreboard_week_{i}.json")
+        write_yahoo_data_to_file(data, path)
+
+
+# ---------------- LEAGUE MATCHUPS BY WEEKS ----------------- #
+skip = True
+if not skip:
+    for i in range(1, endWeek + 1):
+        print('generating matchups for week ' + str(i))
+        data = query.get_league_matchups_by_week(i)
+        path = os.path.join("league_matchups", f"league_matchups_week_{i}.json")
+        write_yahoo_data_to_file(data, path)
+
+# ---------------- LEAGUE STANDINGS ----------------- #
+skip = True
+if not skip:
+    print('generating league teams')
+    data = query.get_league_standings()
+    write_yahoo_data_to_file(data, "league_standings.json")
+
+# ---------------- LEAGUE TEAMS ----------------- #
+skip = True
+if not skip:
+    print('generating league teams')
+    data = query.get_league_teams()
+    write_yahoo_data_to_file(data, "league_teams.json")
+
+# ---------------- LEAGUE PLAYERS ----------------- #
+skip = True
+if not skip:
+    print('generating league players')
+    data = query.get_league_settings()
+    write_yahoo_data_to_file(data, "league_settings.json")
+
+# ---------------- LEAGUE PLAYERS ----------------- #
+skip = True
+if not skip:
+    print('generating league players')
+    data = query.get_league_players()
+    write_yahoo_data_to_file(data, "league_nfl_players.json")
+
+# ---------------- LEAGUE TRANSACTIONS ----------------- #
+skip = True
+if not skip:
+    print('generating league transactions')
+    data = query.get_league_transactions()
+    write_yahoo_data_to_file(data, "league_transactions.json")
+
+# ---------------- LEAGUE DRAFT RESULTS ----------------- #
+skip = True
+if not skip:
+    print('generating league draft results')
+    data = query.get_league_draft_results()
+    write_yahoo_data_to_file(data, "league_draft_results.json")
+
+skip = True
+if not skip:
+    print('generating league rosters for all weeks')
+    teams = json.loads(read_from_output("league_teams.json"))    
+    for i in range(1, endWeek + 1):
+        print('----------- WEEK ' + str(i) + '-----------')        
+        for team_index in range(1, len(teams) + 1):
+            print('team ' + str(team_index))
+            data = query.get_team_roster_by_week(team_index, i)
+            file_name = f'team_{team_index}.json'
+            path = os.path.join('week_' + str(i), file_name)            
+            path = os.path.join("league_rosters", path)
+            write_yahoo_data_to_file(data, path)        
+
+skip = True
+if not skip:
+    print('generating league stats for all weeks')
+    teams = json.loads(read_from_output("league_teams.json"))
+    for i in range(1, endWeek + 1):
+        print('----------- WEEK ' + str(i) + '-----------')
+        for team_index in range(1, len(teams) + 1):
+            print('team ' + str(team_index))
+            data = query.get_team_stats_by_week(team_index, i)
+            file_name = f'team_{team_index}.json'
+            path = os.path.join('week_' + str(i), file_name)            
+            path = os.path.join("league_stats", path)
+            write_yahoo_data_to_file(data, path)
+
+skip = True
+if not skip:
+    print('generating league roster stats for all weeks')
+    teams = json.loads(read_from_output("league_teams.json"))
+    for i in range(1, endWeek + 1):
+        print('----------- WEEK ' + str(i) + '-----------')
+        for team_index in range(1, len(teams) + 1):
+            print('team ' + str(team_index))
+            data = query.get_team_roster_player_stats_by_week(team_index, i)
+            file_name = f'team_{team_index}.json'
+            path = os.path.join('week_' + str(i), file_name)            
+            path = os.path.join("league_roster_stats", path)
+            write_yahoo_data_to_file(data, path)
 
 # query.get_league_scoreboard_by_week(test_chosen_week)
 # query.get_league_matchups_by_week(test_chosen_week)
